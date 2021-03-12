@@ -2,8 +2,11 @@
 <html>
 <head>
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Ahadu Coffee</title>
 <link href="style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="script.js"></script>
 </head>
 
 <body>
@@ -22,7 +25,7 @@
 				<ul href=#menu>Menu</ul>
 				<ul href=#location>Our Location</ul>
 				<ul href=#contact>Contact Us</ul>
-			</nav>	
+			</nav>
 		</div>
 			
 	</header>
@@ -63,30 +66,29 @@
 		</div>
 	</section>
 	<section class="what-we-offer">
-		<div>
-			<h1>What We Offer</h1>
-			<ul>
-				<h3>Fast and Free WiFi</h3>
-				<p>Come work or surg at Ahadu, with super fast 5G WiFi.</p>
-			</ul>
-			<ul>
-				<h3>Convenient Location</h3>
-				<p>Located near St. Luke's East Hospital and B&amp;B Theatre Lee's Smmit 16, we're close to work or play on Doulgas Rd.</p>
-			</ul>
-			<ul>
-				<h3>Free Parking</h3>
-				<p>There's always plenty of parking available for our cozy shop. We're also working on a drive-thru window...coming soon!</p>
-			</ul>	
+		<div class="offer-content">
+			<div>
+				<h1>What We Offer</h1>
+				<ul>
+					<h3 class="fa fa-wifi font-size: 38px"> Fast and Free Wifi</h3>
+					<p>Come work or surf at Ahadu, with super fast 5G WiFi.</p>
+				</ul>
+				<ul>
+				  <h3>Convenient Location</h3>
+				</ul>
+				<ul>
+				  <h3>Free Parking</h3>
+					<p>There's always plenty of parking available for our cozy shop. We're also working on a drive-thru window...coming soon!</p>
+				</ul>		
+			</div>
+			<img src="img/coffee-cup.png" alt="coffee">
 		</div>
-		<img src="img/coffee-cup.png" alt="coffee">	
 	</section>
 	
-	<div id="map"></div>
 	<!--adding Google Maps location-->
-	<script src="script.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqBCgtFGob5o7O5jLmjivf6BHnNrWik0k&callback=initMap&libraries=&v=weekly"
-      async></script>
-	
+	<div id="googleMaps"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqBCgtFGob5o7O5jLmjivf6BHnNrWik0k&callback=initMap&libraries=&v=weekly" 
+	async></script>
 
 	<footer>
 		<div class="contact-links">
@@ -94,7 +96,7 @@
 			<ul>Email: ahaducoffee@gmail.com</ul>
 			<ul>Reach out to us on Facebook</ul>
 		</div>
-		<p class="copyright">Copyright&copy; 2021 Ahadu Coffee</p>
+		<p>Copyright&copy; 2021 Ahadu Coffee</p>
 	</footer>
 </body>
 
