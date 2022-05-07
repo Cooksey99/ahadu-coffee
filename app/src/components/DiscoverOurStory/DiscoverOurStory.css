@@ -1,0 +1,32 @@
+.discover-our-story {
+	position: relative;
+	display: flex;
+	margin: 5vh auto;
+	width: 70%;
+	background: white;
+	border-radius: 1rem;
+}
+.discover-our-story {
+	/* width: 100%; */
+}
+.discover-our-story img {
+	padding: 2rem;
+	height: 35vh;
+	width: auto;
+}
+.discover-our-story h2 {
+	margin-bottom: 2rem;
+}
+.discover-our-story div {
+	display: flex;
+	flex-direction: column;
+	padding: 5rem;
+}
+.background {
+	position: fixed;
+	/* width: 100vw; */
+	bottom: 5%;
+	z-index: -2;
+	/* left: 50%;
+	transform: translateX(-50%); */
+}

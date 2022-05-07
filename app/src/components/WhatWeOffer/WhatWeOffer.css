@@ -1,0 +1,25 @@
+.what-we-offer {
+	background: white;
+	/* width: 100%; */
+	display: flex;
+	padding: 15px;
+
+}
+.what-we-offer div {
+	display: flex;
+    margin: auto;
+	width: 75%;
+	align-items: center;
+}
+.what-we-offer h1,
+.what-we-offer h3,
+.what-we-offer p {
+	text-align: left;
+
+}
+.what-we-offer img {
+	height: 20vh;
+	width: auto;
+	border: 5px double #646464;
+	border-radius: 2rem;
+}

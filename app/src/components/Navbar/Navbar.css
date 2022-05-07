@@ -1,0 +1,47 @@
+header {
+	margin-bottom: -8px;
+}
+.logo {
+	width: 7%;
+	margin: 20px;
+	position: absolute;
+	top: 0;
+}
+.back {
+	height: 100%;
+	/* width: 100%; */
+	z-index: -1;
+	position: relative;
+}
+.container {
+	display: flex;
+	justify-content: flex-start;
+}
+.links {
+	top: 0;
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	right: 10%;
+	width: 50%;
+	margin: 50px 30px;
+	color: white;
+	font-weight: bold;
+}
+.intro {
+	color: white;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.intro p {
+	margin: 2rem;
+}
+.intro button {
+	width: 8%;
+	padding: 10px;
+	color: white;
+	background: linear-gradient(gray, green);
+	border-radius: 1rem;
+
+}

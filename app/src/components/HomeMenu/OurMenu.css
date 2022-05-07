@@ -1,0 +1,35 @@
+.our-menu {
+	margin-top: 0px;
+	padding-top: 5vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background: white;
+}
+.our-menu h1 {
+	margin-bottom: 1em;
+}
+.our-menu img {
+	width: 20vh;
+	border: 5px black groove;
+	border-radius: 50%;
+}
+.menu-sections {
+	width: 80%;
+	display: flex;
+	margin: 3em auto;
+}
+.our-menu ul {
+	margin: auto 12px;
+}
+.our-menu button {
+	width: 10%;
+	padding: 10px;
+	color: white;
+	background: linear-gradient(gray, green);
+	border-radius: 1em;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-bottom: 5vh;
+}
