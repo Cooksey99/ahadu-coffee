@@ -1,32 +1,26 @@
-header {
+section#navbar {
 	margin-bottom: -8px;
+	font-size: 1.5vw;
+	width: 100%;
+	position: absolute;
+	padding: 5px 0;
+	z-index: 2;
 }
 .logo {
-	width: 7%;
-	margin: 20px;
-	position: absolute;
-	top: 0;
+	width: 6vw;
+	float: left;
 }
-.back {
-	height: 100%;
-	/* width: 100%; */
-	z-index: -1;
-	position: relative;
-}
-.container {
-	display: flex;
-	justify-content: flex-start;
+#navbar div {
+	float: right;
 }
 .links {
-	top: 0;
-	position: absolute;
 	display: flex;
 	justify-content: space-around;
-	right: 10%;
-	width: 50%;
-	margin: 50px 30px;
+	align-items: center;
+}
+.links a {
+	text-decoration: none;
 	color: white;
-	font-weight: bold;
 }
 .intro {
 	color: white;

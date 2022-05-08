@@ -4,7 +4,7 @@ export default function DiscoverOurStory() {
 
     return (
         <>
-            <div>
+            <div id='discover-component'>
                 <img class="background" src="https://raw.githubusercontent.com/Cooksey99/ahadu-coffee/master/img/background-img.jpg" />
                 <section class="discover-our-story">
                     <img src="https://raw.githubusercontent.com/Cooksey99/ahadu-coffee/master/img/wife.jpg" />

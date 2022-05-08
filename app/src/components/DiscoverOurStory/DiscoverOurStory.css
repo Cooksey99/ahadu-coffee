@@ -1,32 +1,42 @@
+#discover-component {
+	width: 100%;
+}
 .discover-our-story {
 	position: relative;
 	display: flex;
-	margin: 5vh auto;
+	align-items: center;
+	margin: 8% auto;
 	width: 70%;
 	background: white;
 	border-radius: 1rem;
-}
-.discover-our-story {
-	/* width: 100%; */
+
+	background-color: rgba(255, 255, 255, .6);
+	backdrop-filter: blur(5px);
 }
 .discover-our-story img {
-	padding: 2rem;
-	height: 35vh;
-	width: auto;
+	height: auto;
+	width: 50%;
+	padding: 3%;
 }
 .discover-our-story h2 {
 	margin-bottom: 2rem;
+	text-align: center;
 }
 .discover-our-story div {
 	display: flex;
 	flex-direction: column;
-	padding: 5rem;
+	padding: 3%;
+	text-align: center;
 }
 .background {
 	position: fixed;
-	/* width: 100vw; */
+	width: 100%;
 	bottom: 5%;
 	z-index: -2;
+
+	position:fixed;
+    width:inherit;
+    max-width:inherit;
 	/* left: 50%;
 	transform: translateX(-50%); */
 }

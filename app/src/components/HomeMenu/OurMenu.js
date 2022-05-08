@@ -6,7 +6,7 @@ export default function OurMenu() {
     return (
         <>
             <section class="our-menu">
-                <div>
+                <div class='menu-header'>
                     <h1>Our Menu</h1>
                     <p>Stop by and experience our quality Ethiopian, Brazilian, and Italian roasts. We offer gluten-free, dairy-free, and vegan foods on our menu to satisfy any special dietary flneeds.</p>
                 </div>
