@@ -21,17 +21,16 @@ div.menu-header {
 	font-size: 1vw;
 }
 .our-menu img {
-	width: 20vh;
+	width: calc(100vw / 3);
 	border: .5vh black groove;
 	border-radius: 50%;
 	margin: auto;
 }
 .menu-sections {
-	width: 80%;
-	display: flex;
-	justify-content: space-around;
-	margin: 3em auto;
-	font-size: 1vw;
+	/* width: 100%; */
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+
 }
 
 .our-menu ul {
@@ -42,6 +41,8 @@ div.menu-header {
 	justify-content: center;
 	align-items: center;
 	padding: 0;
+	width: calc(100% / 3);
+	object-fit: scale-down;
 }
 .our-menu h3 {
 	font-size: 2vw;
@@ -53,7 +54,7 @@ div.menu-header {
 	width: 10%;
 	padding: 2vh;
 	color: white;
-	background: linear-gradient(gray, green);
+	background: rgba(19, 172, 119, 0.8);
 	border: none;
 	border-radius: 1em;
 	position: relative;
@@ -61,4 +62,7 @@ div.menu-header {
 	transform: translateX(-50%);
 	margin-bottom: 5vh;
 	font-size: 1vw;
+}
+.our-menu button:hover {
+	box-shadow: 2px 1px 10px rgba(0, 0, 0, .8);
 }

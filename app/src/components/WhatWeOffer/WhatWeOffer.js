@@ -5,12 +5,12 @@ export default function WhatWeOffer() {
 
     return (
         <>
-            <section class="what-we-offer">
-                <div class="offer-content">
+            <section className="what-we-offer">
+                <div className="offer-content">
                     <h1>What We Offer</h1>
-                    <div class='offer-info'>
+                    <div className='offer-info'>
                         <ul>
-                            <h3 class="fa fa-wifi font-size: 38px"> Fast and Free Wifi</h3>
+                            <h3 className="fa fa-wifi font-size: 38px"> Fast and Free Wifi</h3>
                             <p>Come work or surf at Ahadu, with super fast 5G WiFi.</p>
                         </ul>
                         <ul>

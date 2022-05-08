@@ -17,6 +17,7 @@ div.back img {
     display: flex;
     justify-content: center;
     width: 100%;
+    height: inherit;
     font-size: 150%;
 }
 div.intro-background {
@@ -28,6 +29,8 @@ div.intro-background {
     color: black;
     border-radius: 5px;
     padding: auto;
+    height: 50%;
+    width: 60%;
 }
 .intro h1 {
     font-size: 3vw;

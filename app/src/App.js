@@ -22,6 +22,9 @@ function App() {
             <HomeMap />
             <Footer />
           </Route>
+          <Route path='/menu' exact>
+            <Navbar />
+          </Route>
         </Switch>
       </BrowserRouter>
     </div>

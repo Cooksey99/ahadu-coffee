@@ -10,9 +10,9 @@
 html {
   margin: 0;
   /* width: 100vw; */
+  position: relative;
 }
 body {
   margin: 0;
   padding: 0;
 }
-

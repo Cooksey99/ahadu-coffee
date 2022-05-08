@@ -35,8 +35,7 @@
 	z-index: -2;
 
 	position:fixed;
-    width:inherit;
-    max-width:inherit;
+
 	/* left: 50%;
 	transform: translateX(-50%); */
 }

@@ -6,7 +6,7 @@ export default function Footer() {
     return (
         <>
             <footer>
-                <div class="contact-links">
+                <div className="contact-links">
                     <ul>Call: (816)600-6068</ul>
                     <ul>Email: ahaducoffee@gmail.com</ul>
                     <ul>Reach out to us on Facebook</ul>

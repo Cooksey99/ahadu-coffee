@@ -1,17 +1,19 @@
+import { useHistory } from 'react-router-dom';
 import './OurMenu.css';
 
 export default function OurMenu() {
 
+    const history = useHistory()
 
     return (
         <>
-            <section class="our-menu">
-                <div class='menu-header'>
+            <section className="our-menu">
+                <div className='menu-header'>
                     <h1>Our Menu</h1>
                     <p>Stop by and experience our quality Ethiopian, Brazilian, and Italian roasts. We offer gluten-free, dairy-free, and vegan foods on our menu to satisfy any special dietary flneeds.</p>
                 </div>
-                <div class="menu-sections">
-                    <ul class="specialty">
+                <div className="menu-sections">
+                    <ul className="specialty">
                         <img src="https://raw.githubusercontent.com/Cooksey99/ahadu-coffee/master/img/latte-art.jpg" alt="latte" />
                             <h3>Specialty drinks</h3>
                             <p>Try our "Ahadu Special" or any of our other delicious custom drinks. They'll become your new favorite!</p>
@@ -27,7 +29,7 @@ export default function OurMenu() {
                             <p>Uncover the rich depth of our fine Italian espresso, made to order by baristas who know their stuff!</p>
                     </ul>
                 </div>
-                <button>View Full Menu</button>
+                <button onClick={() => history.push('/menu')}>View Full Menu</button>
             </section>
         </>
     )
