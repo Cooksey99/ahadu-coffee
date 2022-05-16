@@ -20,7 +20,9 @@ export default function WhatWeOffer() {
                             <h3>Free Parking</h3>
                             <p>There's always plenty of parking available for our cozy shop. We're also working on a drive-thru window...coming soon!</p>
                         </ul>
-                        <img src="https://raw.githubusercontent.com/Cooksey99/ahadu-coffee/master/img/coffee-cup.png" alt="coffee" />
+                        <ul className='ul-image'>
+                            <img src="https://raw.githubusercontent.com/Cooksey99/ahadu-coffee/master/img/coffee-cup.png" alt="coffee" />
+                        </ul>
                     </div>
                 </div>
             </section>

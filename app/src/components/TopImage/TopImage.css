@@ -1,5 +1,5 @@
 #top-image {
-    width: 100vw;
+    width: 100%;
     margin-bottom: 0;
     display: flex;
     flex-direction: column;
@@ -9,8 +9,11 @@
     margin: auto;
     position: relative;
 }
+div.back {
+    width: 100%;
+}
 div.back img {
-    width: 100vw;
+    width: 100%;
     height: auto
 }
 .back main.intro {

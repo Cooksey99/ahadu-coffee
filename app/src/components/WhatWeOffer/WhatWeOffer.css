@@ -1,24 +1,24 @@
 div.offer-content {
-	display: flex;
-	flex-direction: column;
-
+	width: 90%;
+	margin: auto;
 }
 .what-we-offer {
 	background: white;
-	/* width: 100%; */
+	width: 100%;
 	display: flex;
-	padding: 15px;
-
+	justify-content: center;
 }
 div.offer-info {
-	display: flex;
-	justify-content: space-around;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	width: 100%;
+	margin: auto;
 }
-.what-we-offer div {
-	display: flex;
-    margin: auto;
-	width: 75%;
-	align-items: center;
+section.what-we-offer h1 {
+	text-align: center;
+}
+.what-we-offer ul {
+	padding: 0;
 }
 .what-we-offer h1,
 .what-we-offer h3,
@@ -31,4 +31,23 @@ div.offer-info {
 	width: auto;
 	border: 5px double #646464;
 	border-radius: 2rem;
+}
+ul.ul-image {
+	display: flex;
+	justify-content: center;
+}
+
+@media screen and (max-width: 780px) {
+	div.offer-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 80%;
+		padding-bottom: 15px;
+	}
+	div.offer-info ul {
+		width: 100%;
+		margin: auto;
+	}
 }

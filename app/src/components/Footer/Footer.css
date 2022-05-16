@@ -11,3 +11,23 @@ footer {
 footer p {
 	padding-left: 35px;
 }
+
+@media screen and (max-width: 780px) {
+	footer {
+		max-width: 780px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	div.contact-links {
+		padding: 0;
+		margin: 0;
+		display: flex;
+		justify-content: center;
+		gap: 15px;
+	}
+	.contact-links ul {
+		padding: 0;
+		text-align: center;
+	}
+}
