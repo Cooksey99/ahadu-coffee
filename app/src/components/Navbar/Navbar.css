@@ -1,0 +1,47 @@
+section#navbar {
+	margin-bottom: -8px;
+	font-size: 1.5vw;
+	width: 100%;
+	position: absolute;
+	padding: 5px 0;
+	z-index: 2;
+	background: rgba(255, 255, 255, .6);
+	backdrop-filter: blur(5px);
+}
+.logo {
+	width: 6vw;
+	float: left;
+}
+#navbar div {
+	float: right;
+}
+.links {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.links a {
+	text-decoration: none;
+	color:black;
+}
+.links a:hover {
+	color: white;
+	text-shadow: rgba(0, 0, 0, 1) 2px 2px 15px;;
+}
+.intro {
+	color: black;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.intro p {
+	margin: 2rem;
+}
+.intro button {
+	width: 8%;
+	padding: 10px;
+	color: white;
+	background: linear-gradient(gray, green);
+	border-radius: 1rem;
+
+}
