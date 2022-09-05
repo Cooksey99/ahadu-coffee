@@ -1,9 +1,9 @@
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import './OurMenu.css';
 
 export default function OurMenu() {
 
-    const history = useHistory()
+    const history = useNavigate()
 
     return (
         <>

@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DiscoverOurStory from "./components/DiscoverOurStory/DiscoverOurStory";
 import Footer from "./components/Footer/Footer";
 import HomeMap from "./components/GoogleMaps/HomeMap";
@@ -12,20 +12,28 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Switch>
-          <Route path='/' exact>
-            <Navbar />
-            <TopImage />
-            <OurMenu />
-            <DiscoverOurStory />
-            <WhatWeOffer />
-            <HomeMap />
-            <Footer />
+        <Routes>
+          <Route path='/' exact element={
+            <>
+              <Navbar />
+              <TopImage />
+              <OurMenu />
+              <DiscoverOurStory />
+              <WhatWeOffer />
+              <HomeMap />
+              <Footer />
+            </>
+            }>
           </Route>
-          <Route path='/menu' exact>
+          <Route path='/menu' exact element={
             <Navbar />
+
+            }>
           </Route>
-        </Switch>
+          <Route path='/about' exact>
+
+          </Route>
+        </Routes>
       </BrowserRouter>
     </div>
   );
