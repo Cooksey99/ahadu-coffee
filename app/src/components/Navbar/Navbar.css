@@ -4,26 +4,30 @@ section#navbar {
 	width: 100%;
 	position: fixed;
 	top: 0;
-	padding: 5px 0;
 	z-index: 2;
 	background: rgba(255, 255, 255, .6);
 	backdrop-filter: blur(5px);
+	height: 8vh;
+	display: flex;
+	justify-content: center;
 }
 .logo {
-	width: 6vw;
+	height: 90%;
 	float: left;
 }
-#navbar div {
-	float: right;
-}
-.links {
+/* #navbar div {
+
+} */
+nav.links {
 	display: flex;
-	justify-content: space-around;
 	align-items: center;
+	justify-content: space-between;
+	width: 100%;
 }
 .links a {
 	text-decoration: none;
 	color:black;
+	font-size: 120%;
 }
 .links a:hover {
 	color: white;

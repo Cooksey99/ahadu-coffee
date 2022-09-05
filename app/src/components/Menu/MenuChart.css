@@ -1,5 +1,22 @@
-section#menu-chart {
+section#menu-container {
+    background: coral;
+    width: 100%;
+    height: 80%;
+    /* margin-top: 25%; */
     display: flex;
+    justify-content: center;
+}
+
+div#menu-chart {
+    width: 80%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+div#menu-chart div {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }

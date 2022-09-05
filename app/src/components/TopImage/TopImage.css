@@ -6,7 +6,7 @@
     justify-content: flex-start;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin: 8vh auto 0 auto;
     position: relative;
 }
 div.back {
