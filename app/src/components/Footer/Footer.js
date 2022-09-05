@@ -11,7 +11,7 @@ export default function Footer() {
                     <ul>Email: ahaducoffee@gmail.com</ul>
                     <ul>Reach out to us on Facebook</ul>
                 </div>
-                <p>Copyright&copy; 2021 Ahadu Coffee</p>
+                <p>Copyright&copy; 2022 Ahadu Coffee</p>
             </footer>
         </>
     )

@@ -3,6 +3,7 @@ import DiscoverOurStory from "./components/DiscoverOurStory/DiscoverOurStory";
 import Footer from "./components/Footer/Footer";
 import HomeMap from "./components/GoogleMaps/HomeMap";
 import OurMenu from "./components/HomeMenu/OurMenu";
+import MenuChart from "./components/Menu/MenuChart";
 import Navbar from "./components/Navbar/Navbar";
 import TopImage from "./components/TopImage/TopImage";
 import WhatWeOffer from "./components/WhatWeOffer/WhatWeOffer";
@@ -26,8 +27,11 @@ function App() {
             }>
           </Route>
           <Route path='/menu' exact element={
-            <Navbar />
-
+            <>
+              <Navbar />
+              <MenuChart />
+              <Footer />
+            </>
             }>
           </Route>
           <Route path='/about' exact>

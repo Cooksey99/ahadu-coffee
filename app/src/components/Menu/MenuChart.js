@@ -1,11 +1,11 @@
-
+import './MenuChart.css'
 
 export default function MenuChart() {
 
     return (
         <>
-            <section>
-                <div>
+            <section id="menu-chart">
+                <div id="hot-drinks">
                     <h3>Hot</h3>
                     {/* only 8 oz */}
                     <p>Espresso</p>
@@ -22,7 +22,7 @@ export default function MenuChart() {
                     <p>Dirty Chai</p>
                 </div>
 
-                <div>
+                <div id="iced-drinks">
                     <h3>Cold</h3>
                     <p>Cold Brew</p>
                     <p>Iced Latte</p>
@@ -30,7 +30,7 @@ export default function MenuChart() {
                     <p>Iced Dirty Chai</p>
                 </div>
 
-                <div>
+                <div id="blended-drinks">
                     <h3>Blended</h3>
                     <p>Ahadu Freeze</p>
                     <p>Frozen Latte</p>
@@ -38,7 +38,7 @@ export default function MenuChart() {
                     <p>Fruit Smoothie</p>
                 </div>
 
-                <div>
+                <div id="add-ins">
                     <h4>Add-Ins</h4>
                     <div>
                         <h5>Milks</h5>
