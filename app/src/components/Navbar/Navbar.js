@@ -14,8 +14,8 @@ export default function Navbar() {
                             onClick={() => history.push('/')} alt="logo" />
                         <Link to={'/'}><h2>Home</h2></Link>
                         <Link to={'/menu'}><h2>Menu</h2></Link>
-                        <Link to={''}><h2>Our Location</h2></Link>
-                        <Link to={''}><h2>Contact Us</h2></Link>
+                        <Link to={'/location'}><h2>Our Location</h2></Link>
+                        <Link to={'/about-us'}><h2>About Us</h2></Link>
                         <div className='logo'/>
                     </nav>
                 </section>

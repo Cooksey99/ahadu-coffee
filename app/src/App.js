@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import AboutUs from "./components/AboutUs/AboutUs";
 import DiscoverOurStory from "./components/DiscoverOurStory/DiscoverOurStory";
 import Footer from "./components/Footer/Footer";
 import HomeMap from "./components/GoogleMaps/HomeMap";
@@ -24,7 +25,7 @@ function App() {
               <HomeMap />
               <Footer />
             </>
-            }>
+          }>
           </Route>
           <Route path='/menu' exact element={
             <>
@@ -32,11 +33,24 @@ function App() {
               <MenuChart />
               <Footer />
             </>
-            }>
-          </Route>
-          <Route path='/about' exact>
+          } />
 
-          </Route>
+          <Route path='/location' exact element={
+            <>
+              <Navbar />
+              <Footer />
+            </>
+          } />
+
+          <Route path='/about-us' exact element={
+            <>
+              <Navbar />
+              <AboutUs />
+              <Footer />
+            </>
+          } />
+
+
         </Routes>
       </BrowserRouter>
     </div>
