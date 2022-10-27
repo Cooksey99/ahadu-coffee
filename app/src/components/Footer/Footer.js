@@ -7,7 +7,7 @@ export default function Footer() {
         <>
             <footer>
                 <div className="contact-links">
-                    <ul>Call: (816)600-6068</ul>
+                    <ul className='sky-100'>Call: (816)600-6068</ul>
                     <ul>Email: ahaducoffee@gmail.com</ul>
                     <ul>Reach out to us on Facebook</ul>
                 </div>
@@ -16,3 +16,4 @@ export default function Footer() {
         </>
     )
 }
+    
