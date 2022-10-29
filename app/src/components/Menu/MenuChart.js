@@ -1,4 +1,8 @@
-import './MenuChart.css'
+import './MenuChart.css';
+import Grid from '@mui/material/Grid'; // Grid version 1
+import Grid2 from '@mui/material/Unstable_Grid2'; // Grid version 2
+import { MenuItem } from '@mui/material';
+
 
 export default function MenuChart() {
 
@@ -51,7 +55,24 @@ export default function MenuChart() {
                         </div>
                     </div>
                 </div>
+                 
             </section>
+
+            {/* <Grid2 container spacing={2} id='menu-container'>
+                <Grid2 xs={8}>
+                    <MenuItem>xs=8</MenuItem>
+                </Grid2>
+                <Grid2 xs={4}>
+                    <MenuItem>xs=4</MenuItem>
+                </Grid2>
+                <Grid2 xs={4}>
+                    <MenuItem>xs=4</MenuItem>
+                </Grid2>
+                <Grid2 xs={8}>
+                    <MenuItem>xs=8</MenuItem>
+                </Grid2>
+
+            </Grid2> */}
         </>
     )
 }
