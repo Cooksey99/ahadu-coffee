@@ -8,7 +8,7 @@ export default function Navbar() {
     return (
         <>
             {/* <div> */}
-                <section className='fixed flex justify-center align-center h-[8vh] w-full bg-slate-50 z-50 px-8 py-2'>
+                <section className='fixed flex justify-center align-center h-[8vh] w-full bg-slate-100 z-50 px-8 py-2'>
                     <nav className="links">
                         <img className="logo" src="https://raw.githubusercontent.com/Cooksey99/ahadu-coffee/master/img/logo.png"
                             onClick={() => navigate('/')} alt="logo" />
