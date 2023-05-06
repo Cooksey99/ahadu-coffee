@@ -11,6 +11,7 @@
   box-sizing: border-box;
 }
 html {
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
   /* width: 100vw; */
   position: relative;
@@ -24,7 +25,7 @@ body {
     @apply text-center bg-slate-300 duration-700 text-black font-bold 
     h-10 w-auto 
     rounded-full
-    hover:bg-black duration-700 hover:text-white;
+    hover:bg-black hover:text-white;
   }
   .frosted-glass {
     @apply bg-opacity-20 bg-white backdrop-blur-sm;
