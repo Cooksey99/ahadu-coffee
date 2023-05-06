@@ -1,35 +1,60 @@
 import { useNavigate } from 'react-router-dom';
-import './OurMenu.css';
 
 export default function OurMenu() {
 
     const navigate = useNavigate()
 
+    const tabs = [
+        {
+            h1: 'Specialty Drinks',
+            p: 'Try our "Ahadu Special" or any of our other delicious custom drinks. They\'ll become your new favorite!',
+            img: 'https://raw.githubusercontent.com/Cooksey99/ahadu-coffee/master/img/latte-art.jpg',
+            alt: 'latte art'
+        },
+        {
+            h1: 'Treats',
+            p: 'If you\'re on the go, grab a bagel! Or stay to savor some of our homemade sweet cakes or muffins.',
+            img: 'https://raw.githubusercontent.com/Cooksey99/ahadu-coffee/master/img/pastery-food.jpg',
+            alt: 'pastery food'
+        },
+        {
+            h1: 'Espresso',
+            p: 'Uncover the rich depth of our fine Italian espresso, made to order by baristas who know their stuff!',
+            img: 'https://raw.githubusercontent.com/Cooksey99/ahadu-coffee/master/img/espresso-shot.jpeg',
+            alt: 'espresso shot'
+        }
+    ];
     return (
         <>
-            <section className="our-menu">
-                <div className='menu-header'>
-                    <h1>Our Menu</h1>
-                    <p>Stop by and experience our quality Ethiopian, Brazilian, and Italian roasts. We offer gluten-free, dairy-free, and vegan foods on our menu to satisfy any special dietary flneeds.</p>
+            <section className="w-full flex flex-col justify-center align-middle bg-slate-100 py-6">
+                <div className='text-center w-3/4 flex flex-col justify-center align-middle m-auto'>
+                    <h1 className='font-bold text-4xl text-center'>Our Menu</h1>
+                    <p className=''>Stop by and experience our quality Ethiopian, Brazilian, and Italian roasts. We offer gluten-free, dairy-free, and vegan foods on our menu to satisfy any special dietary flneeds.</p>
                 </div>
-                <div className="menu-sections">
-                    <ul className="specialty">
-                        <img src="https://raw.githubusercontent.com/Cooksey99/ahadu-coffee/master/img/latte-art.jpg" alt="latte" />
-                            <h3>Specialty drinks</h3>
-                            <p>Try our "Ahadu Special" or any of our other delicious custom drinks. They'll become your new favorite!</p>
-                    </ul>
-                    <ul>
-                        <img src="https://raw.githubusercontent.com/Cooksey99/ahadu-coffee/master/img/pastery-food.jpg" alt="treats" />
-                            <h3>Treats</h3>
-                            <p>If you're on the go, grab a bagel! Or stay to savor some of our homemade sweet cakes or muffins.</p>
-                    </ul>
-                    <ul>
-                        <img src="https://raw.githubusercontent.com/Cooksey99/ahadu-coffee/master/img/espresso-shot.jpeg" alt="espresso" />
-                            <h3>Espresso</h3>
-                            <p>Uncover the rich depth of our fine Italian espresso, made to order by baristas who know their stuff!</p>
-                    </ul>
+                <div className="flex justify-evenly gap-3 py-8">
+
+                    {tabs.map((tab, i) => (
+                        <div class="max-w-sm w-64 bg-white border border-gray-200 rounded-lg shadow flex flex-col align-middle">
+                            <img class="rounded-t-lg" src={tab.img} alt={tab.alt} />
+                            <div class="p-5">
+                                <a href="#">
+                                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">{tab.h1}</h5>
+                                </a>
+                                <p class="mb-3 font-normal text-gray-700">{tab.p}</p>
+                            </div>
+                        </div>
+                    ))}
+
                 </div>
-                <button onClick={() => navigate('/menu')}>View Full Menu</button>
+                <div className='flex justify-center'>
+                    <button onClick={() => navigate('/menu')} class="flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium w-36 text-center
+                    text-gray-900 rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 focus:ring-4 focus:outline-none focus:ring-lime-200">
+                        <span class="relative w-full px-5 py-2.5 transition-all ease-in duration-75 bg-slate-200 rounded-md group-hover:bg-opacity-0">
+                            View Full Menu
+                        </span>
+                    </button>
+
+                </div>
             </section>
         </>
     )
