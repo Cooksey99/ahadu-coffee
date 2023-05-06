@@ -28,7 +28,7 @@ body {
     hover:bg-black hover:text-white;
   }
   .frosted-glass {
-    @apply bg-opacity-20 bg-white backdrop-blur-sm;
+    @apply bg-opacity-60 bg-white backdrop-blur-md;
   }
 
   .text-input {
