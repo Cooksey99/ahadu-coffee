@@ -3,7 +3,7 @@ import './OurMenu.css';
 
 export default function OurMenu() {
 
-    const history = useNavigate()
+    const navigate = useNavigate()
 
     return (
         <>
@@ -29,7 +29,7 @@ export default function OurMenu() {
                             <p>Uncover the rich depth of our fine Italian espresso, made to order by baristas who know their stuff!</p>
                     </ul>
                 </div>
-                <button onClick={() => history.push('/menu')}>View Full Menu</button>
+                <button onClick={() => navigate('/menu')}>View Full Menu</button>
             </section>
         </>
     )
