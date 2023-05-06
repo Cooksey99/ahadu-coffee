@@ -28,7 +28,7 @@ export default function Navbar() {
                 throttleTimer = setTimeout(function () {
                     const pos = window.scrollY;
 
-                    if (pos > 150) {
+                    if (pos > 250) {
                         floatNav();
                     } else {
                         blockNav();

@@ -42,11 +42,4 @@ nav.links {
 .intro p {
 	margin: 2rem;
 }
-.intro button {
-	width: 8%;
-	padding: 10px;
-	color: white;
-	background: linear-gradient(gray, green);
-	border-radius: 1rem;
 
-}
