@@ -1,24 +1,58 @@
 import { Link, useNavigate } from 'react-router-dom';
 import './Navbar.css'
+import { useEffect, useRef } from 'react';
 
 export default function Navbar() {
 
+    const ref = useRef();
     const navigate = useNavigate();
+
+    const floatNav = () => {
+        ref?.current?.classList?.add('rounded-full', 'm-2', 'bg-slate-100')
+        ref?.current?.classList?.remove('bg-slate-300')
+
+    }
+    const blockNav = () => {
+        ref?.current?.classList?.remove('rounded-full', 'm-2', 'bg-slate-100')
+        ref?.current?.classList?.add('bg-slate-300')
+    }
+
+    useEffect = () => {
+
+        let throttleTimer = null;
+
+        window.addEventListener('scroll', function () {
+
+            if (throttleTimer === null) {
+
+                throttleTimer = setTimeout(function () {
+                    const pos = window.scrollY;
+
+                    if (pos > 150) {
+                        floatNav();
+                    } else {
+                        blockNav();
+                    }
+                    throttleTimer = null;
+                }, 100);
+            }
+        });
+    }, [];
 
     return (
         <>
             {/* <div> */}
-                <section className='fixed flex justify-center align-center h-[8vh] w-full bg-slate-100 z-50 px-8 py-2'>
-                    <nav className="links">
-                        <img className="logo" src="https://raw.githubusercontent.com/Cooksey99/ahadu-coffee/master/img/logo.png"
-                            onClick={() => navigate('/')} alt="logo" />
-                        <Link to={'/'}><h2>Home</h2></Link>
-                        <Link to={'/menu'}><h2>Menu</h2></Link>
-                        <Link to={'/location'}><h2>Our Location</h2></Link>
-                        <Link to={'/about-us'}><h2>About Us</h2></Link>
-                        <div className='logo'/>
-                    </nav>
-                </section>
+            <section className='fixed flex justify-center align-center h-24 w-full z-50'>
+                <nav className="links bg-slate-300 z-50 px-8 py-2 shadow duration-700" ref={ref}>
+                    <img className="logo" src="https://raw.githubusercontent.com/Cooksey99/ahadu-coffee/master/img/logo.png"
+                        onClick={() => navigate('/')} alt="logo" />
+                    <Link to={'/'}><h2>Home</h2></Link>
+                    <Link to={'/menu'}><h2>Menu</h2></Link>
+                    <Link to={'/location'}><h2>Our Location</h2></Link>
+                    <Link to={'/about-us'}><h2>About Us</h2></Link>
+                    <div className='logo' />
+                </nav>
+            </section>
 
             {/* </div> */}
         </>
