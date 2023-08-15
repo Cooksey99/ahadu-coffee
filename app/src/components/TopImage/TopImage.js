@@ -7,6 +7,8 @@ export default function TopImage() {
 
 
     useEffect(() => {
+
+        console.log('in effect');
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
@@ -16,6 +18,7 @@ export default function TopImage() {
                 } else {
                     ref.current.classList.remove('opacity-100', 'animate-fadeIn');
                     ref.current.classList.add('opacity-0', 'animate-fadeOut');
+                    console.log('out of view');
                 }
             },
             {

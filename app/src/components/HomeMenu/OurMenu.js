@@ -31,8 +31,11 @@ export default function OurMenu() {
         if (el && !ref.current.includes(el)) {
             ref.current.push(el);
         }
+
+        console.log(ref.current);
     };
 
+    
     return (
         <>
             <section className="w-full flex flex-col justify-center align-middle bg-slate-100 py-6">
