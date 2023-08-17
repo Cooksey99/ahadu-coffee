@@ -102,7 +102,7 @@ export default function MenuChart() {
 
     const calculatePage = () => {
         return page.map((item, index) => (
-            <p key={index}>{index}: {item}</p>
+            <p key={index}>{item}</p>
         ))
     };
 
