@@ -3,8 +3,6 @@ import { useState } from "react";
 
 export default function MenuChart() {
 
-    const [page, setPage] = useState([]);
-
     const hotList = [
         "Espresso",
         "Macchiato",
@@ -99,6 +97,8 @@ export default function MenuChart() {
         "Syrup - Vanilla, Caramel, Almond, Coconut, Hazelnut, Irish Cream, Almond Roca, Brown Sugar & Cinnamon, Amaretto, Cherry, Tangerine, Blackberry, Raspberry, Sugar Free Vanilla, Strawberry, Peach, Sugar Free Caramel, Sugar Free Chocolate",
         "Extra Espresso (2 Shots)"
         ];
+
+    const [page, setPage] = useState(hotList);
 
     const calculatePage = () => {
         return page.map((item, index) => (
