@@ -1,57 +1,48 @@
-import './MenuChart.css'
+import { useState } from "react";
+
 
 export default function MenuChart() {
 
+    const [page, setPage] = useState([]);
+
+    const hotList = ['hot1', 'hot2', 'hot3'];
+    const coldList = ['cold1', 'cold2', 'cold3'];
+
+    const calculatePage = () => {
+        return page.map((item, index) => (
+            <p key={index}>{index}: {item}</p>
+        ))
+    };
+
+
+
+
     return (
         <>
-            <section id='menu-container'>
-
-                <div id="menu-chart">
-                    <div id="hot-drinks">
-                        <h2>Hot</h2>
-                        {/* only 8 oz */}
-                        <p>Espresso</p>
-                        <p>Macchiato</p>
-                        <p>Ahadu Macchiato</p>
-                        <p>Campana</p>
-
-                        {/* all sizes */}
-                        <p>Ahadu Special</p>
-                        <p>Americano</p>
-                        <p>Cappuncino</p>
-                        <p>Latte</p>
-                        <p>Mocha</p>
-                        <p>Dirty Chai</p>
+            <section className="w-full h-96 bg-red-400">
+                <h1 className="flex justify-center">Our Menu</h1>
+                
+                <div className="px-6">
+                    <div className="flex justify-around gap-3">
+                        <button className="cust-button"
+                            onClick={() => setPage(hotList)}>Hot</button>
+                        <button className="cust-button"
+                            onClick={() => setPage(coldList)}>Cold</button>
+                        <button className="cust-button">Blended</button>
+                        <button className="cust-button">Coffee</button>
+                        <button className="cust-button">Non-Coffee</button>
+                        <button className="cust-button">Smoothies</button>
+                        <button className="cust-button">Tea</button>
+                        <button className="cust-button">Bottled</button>
+                        <button className="cust-button">Add-ons</button>
+                        <button className="cust-button">Bakery</button>
                     </div>
-
-                    <div id="iced-drinks">
-                        <h2>Cold</h2>
-                        <p>Cold Brew</p>
-                        <p>Iced Latte</p>
-                        <p>Iced Mocha</p>
-                        <p>Iced Dirty Chai</p>
-                    </div>
-
-                    <div id="blended-drinks">
-                        <h2>Blended</h2>
-                        <p>Ahadu Freeze</p>
-                        <p>Frozen Latte</p>
-                        <p>Blender</p>
-                        <p>Fruit Smoothie</p>
-                    </div>
-
-                    <div id="add-ins">
-                        <h4>Add-Ins</h4>
-                        <div>
-                            <h5>Milks</h5>
-                            <p>Almond</p>
-                            <p>Oat</p>
-                            <p>Soy</p>
-                            <p>Coconut</p>
-                        </div>
+                    <div className="bg-slate-300 w-full h-full">
+                        <h1>LIST</h1>
+                        {calculatePage()}
                     </div>
                 </div>
             </section>
         </>
     )
-}
+};

@@ -1,9 +1,9 @@
-import { useNavigate } from 'react-router-dom';
+// import { useNavigate } from 'react-router-dom';
 import { useRef } from 'react';
 
 export default function OurMenu() {
 
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
     const ref = useRef([]);
 
     const tabs = [
@@ -59,12 +59,12 @@ export default function OurMenu() {
 
                 </div>
                 <div className='flex justify-center'>
-                    <button onClick={() => navigate('/menu')} className="flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium w-36 text-center
+                    {/* <button onClick={() => navigate('/menu')} className="flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium w-36 text-center
                     text-gray-900 rounded-lg group bg-gradient-to-br from-teal-300 to-lime-300 group-hover:from-teal-300 group-hover:to-lime-300 focus:ring-4 focus:outline-none focus:ring-lime-200">
                         <span className="relative w-full px-5 py-2.5 transition-all ease-in duration-75 bg-slate-200 rounded-md group-hover:bg-opacity-0">
                             View Full Menu
                         </span>
-                    </button>
+                    </button> */}
 
                 </div>
             </section>

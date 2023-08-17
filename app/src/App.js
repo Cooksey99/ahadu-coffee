@@ -29,9 +29,9 @@ function App() {
           </Route>
           <Route path='/menu' exact element={
             <>
-              <Navbar />
-              <MenuChart />
-              <Footer />
+              {/* <Navbar/> */}
+              <MenuChart/>
+              {/* <Footer /> */}
             </>
           } />
 

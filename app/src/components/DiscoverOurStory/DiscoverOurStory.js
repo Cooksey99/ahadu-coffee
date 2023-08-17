@@ -1,7 +1,6 @@
 import './DiscoverOurStory.css';
 
 export default function DiscoverOurStory() {
-
     return (
         <>
             <div className=''>
