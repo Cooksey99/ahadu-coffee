@@ -39,22 +39,18 @@ export default function Navbar() {
         });
     }, [];
 
+    
+
     return (
         <>
             {/* <div> */}
             <section className='fixed flex justify-center align-center h-24 w-full z-50'>
                 <nav className="links frosted-glass z-50 px-8 py-2 shadow duration-700" ref={ref}>
-                    {/* <img className="logo" src="https://raw.githubusercontent.com/Cooksey99/ahadu-coffee/master/img/logo.png"
-                        onClick={() => {
-                            useEffect(() => {
-                                console.log('test')
-                                navigate('/account')
-                            }, []);
-                        }} alt="logo" /> */}
-                    <Link to={'/'}><h2>Home</h2></Link>
-                    <Link to={'/menu'}><h2>Menu</h2></Link>
-                    <Link to={'/location'}><h2>Our Location</h2></Link>
-                    <Link to={'/about-us'}><h2>About Us</h2></Link>
+                    <img className="logo" src="https://raw.githubusercontent.com/Cooksey99/ahadu-coffee/master/img/logo.png"
+                        onClick={() => navigate('/')} alt="logo" />
+                    <Link to='/menu' onClick={() => wtf()}><h2>Menu</h2></Link>
+                    <Link to='/location' onClick={() => wtf()}><h2>Our Location</h2></Link>
+                    <Link to='/about-us' onClick={() => wtf()}><h2>About Us</h2></Link>
                     <div className='logo' />
                 </nav>
             </section>

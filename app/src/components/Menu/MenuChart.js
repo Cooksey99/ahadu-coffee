@@ -14,13 +14,13 @@ export default function MenuChart() {
         "Latte",
         "Mocha",
         "Dirty Chai"
-      ];
-      const icedList = [
+    ];
+    const icedList = [
         "Cold Brew",
         "Iced Latte",
         "Iced Mocha",
         "Iced Dirty Chai"
-      ];
+    ];
     const bakeryList = [
         "Red Velvet Muffins",
         "Cranberry Orange Muffins",
@@ -35,22 +35,22 @@ export default function MenuChart() {
         "Cinnamon Raisin Bagels",
         "Chocolate Chip Supreme Cookie",
         "Chocolate Chip Coffee Cake"
-      ];
-      const blendedList = [
+    ];
+    const blendedList = [
         "Ahadu Freeze",
         "Frozen Latte",
         "Blender",
         "Fruit Smoothie"
-      ];
-      const coffeeList = [
+    ];
+    const coffeeList = [
         "Drip",
         "Cafe Au Lait",
         "Shot In The Dark",
         "Pour Over",
         "Chemex",
         "French Press"
-      ];
-      const nonCoffeeList = [
+    ];
+    const nonCoffeeList = [
         "Homestyle Tea",
         "Italian Soda",
         "Chocolate Milk",
@@ -58,8 +58,8 @@ export default function MenuChart() {
         "London Fog",
         "Chai Tea Latte (Hot or Iced)",
         "Hot Chocolate"
-      ];
-      const smoothiesList = [
+    ];
+    const smoothiesList = [
         "Strawberry",
         "Strawberry Banana",
         "Peach",
@@ -67,8 +67,8 @@ export default function MenuChart() {
         "Blueberry Pomegranate",
         "Wild Berry",
         "Mango"
-      ];
-      const teaList = [
+    ];
+    const teaList = [
         "Black",
         "Green",
         "Earl Grey",
@@ -83,20 +83,20 @@ export default function MenuChart() {
         "Caramel Apple Decaf",
         "House Chai",
         "More Decaf Options..."
-      ];
-      const bottledList = [
+    ];
+    const bottledList = [
         "Smart Water",
         "Jarritos (Mandarin, Guava, Pineapple, Lime)",
         "Coca-Cola",
         "Vitamin Water (XXX)",
         "Vitamin Water Zero (Squeezed Lemonade)"
-      ];
-      const addOnsList = [
+    ];
+    const addOnsList = [
         "Milk - Almond, Oat, Skim, Soy Coconut",
         "Sauce - Chocolate, Sugar Free Chocolate, White Chocolate, Caramel",
         "Syrup - Vanilla, Caramel, Almond, Coconut, Hazelnut, Irish Cream, Almond Roca, Brown Sugar & Cinnamon, Amaretto, Cherry, Tangerine, Blackberry, Raspberry, Sugar Free Vanilla, Strawberry, Peach, Sugar Free Caramel, Sugar Free Chocolate",
         "Extra Espresso (2 Shots)"
-        ];
+    ];
 
     const [page, setPage] = useState(hotList);
 
@@ -113,7 +113,7 @@ export default function MenuChart() {
         <>
             <section className="w-full h-96 bg-red-400">
                 <h1 className="flex justify-center">Our Menu</h1>
-                
+
                 <div className="px-6">
                     <div className="flex justify-around gap-3">
                         <button className="cust-button"
@@ -142,7 +142,9 @@ export default function MenuChart() {
                         {calculatePage()}
                     </div>
                 </div>
+                
             </section>
+
         </>
     )
 };

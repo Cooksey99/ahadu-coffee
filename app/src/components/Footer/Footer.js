@@ -2,7 +2,7 @@ export default function Footer() {
 
     return (
         <>
-            <footer className="w-full h-48 flex justify-between items-center text-white bg-black px-12">
+            <footer className="w-full h-48 flex justify-between items-center text-white bg-black px-12 bottom-0">
                 <div className="contact-links flex flex-col gap-4">
                     <ul className='sky-100'>Call: (816)600-6068</ul>
                     <ul>Email: ahaducoffee@gmail.com</ul>

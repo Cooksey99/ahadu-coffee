@@ -639,7 +639,7 @@ video {
 html {
   margin: 0;
   /* width: 100vw; */
-  position: relative;
+  /* position: relative; */
 }
 
 body {
